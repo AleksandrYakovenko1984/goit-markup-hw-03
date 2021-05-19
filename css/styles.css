@@ -1,3 +1,12 @@
+:root {
+  --primary-text-color: #212121;
+  --second-primary-text-color: #fff;
+  --title-text-color: #757575;
+  --accennt-color: #2196f3;
+  --background-color-primary: #2f303a;
+  --button-portf-background: #f5f4fa;
+}
+
 h1,
 h2,
 h3,
@@ -30,16 +39,15 @@ img {
 body {
   font-family: Roboto, sans-serif;
   background: #ffffff;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 /* header */
 .header {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  color: #212121;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 ul {
   list-style: none;
@@ -51,14 +59,15 @@ ul {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
+
   /* identical to box height */
 
   letter-spacing: 0.03em;
-  color: black;
+  color: var(--primary-text-color);
 }
 .logo-color {
-  color: #2196f3;
+  color: var(--accennt-color);
 }
 a {
   text-decoration: none;
@@ -76,41 +85,42 @@ a {
   margin-right: 50px;
 }
 .menu a {
-  color: #000;
+  color: var(--primary-text-color);
 }
 .menu a:hover {
-  color: #2196f3;
+  color: var(--accennt-color);
 }
 
 /* contacts section */
 .contacts {
   display: flex;
   align-items: center;
+  padding: 32px 0 32px 0;
 }
 .mail {
   margin-left: auto;
   margin-right: 50px;
-  color: #757575;
+  color: var(--title-text-color);
 }
 .mail:hover {
-  color: #2196f3;
+  color: var(--accennt-color);
 }
 .mail:focus {
 }
 .mail:active {
 }
 .phone {
-  color: #757575;
+  color: var(--title-text-color);
 }
 .phone:hover {
-  color: #2196f3;
+  color: var(--accennt-color);
 }
 .phone:focus {
 }
 /* ==========section hero========== */
 .hero {
-  background-color: #2f303a;
-  margin-bottom: 94px;
+  background-color: var(--background-color-primary);
+  padding-bottom: 94px;
   height: 600px;
   display: flex;
 }
@@ -122,7 +132,7 @@ a {
   font-size: 44px;
   line-height: 1.36;
   /* or 136% */
-  color: #fff;
+  color: var(--second-primary-text-color);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -134,8 +144,8 @@ a {
   margin-left: 500px;
   margin-right: 500px;
   margin-top: 30px;
-  background-color: #2196f3;
-  color: #fff;
+  background-color: var(--accennt-color);
+  color: var(--second-primary-text-color);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -144,13 +154,18 @@ a {
 }
 /* наши сильные стороны */
 .our-power-sides {
-  margin-bottom: 94px;
+  padding-top: 94px;
 }
 .about-us {
   display: flex;
   flex-direction: row;
 }
-.about-us:not(:last-child) {
+.about-us li {
+  width: 270px;
+  height: 101px;
+}
+
+.about-us li:not(:last-child) {
   margin-right: 30px;
 }
 .our-power-side {
@@ -166,26 +181,25 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--title-text-color);
 }
 /* чем мы занимаемся */
-
+.what-we-do-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .we-are-do {
-  width: 376px;
   height: 42px;
-
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   margin-bottom: 50px;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .what-we-do {
   display: flex;
   flex-direction: row;
-  margin-bottom: 94px;
 }
 .img-one {
   margin-right: 30px;
@@ -196,13 +210,17 @@ a {
 .img-three {
 }
 /* наша команда */
+.our-team-section {
+  padding-top: 94px;
+}
+
 .our-team-name {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
-  margin: 94px 0 50px 0;
+  padding: 0px 0 50px 0;
   text-align: center;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .our-team {
   display: flex;
@@ -215,7 +233,7 @@ a {
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
   margin-top: 30px;
   margin-bottom: 10px;
 }
@@ -225,7 +243,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
-  color: #757575;
+  color: var(--title-text-color);
 }
 .card-agent {
   margin-right: 30px;
@@ -235,7 +253,7 @@ a {
 .footer {
   padding: 60px 0;
   height: 252px;
-  background-color: #2f303a;
+  background-color: var(--background-color-primary);
 }
 .logo-footer {
   width: 145px;
@@ -246,7 +264,7 @@ a {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: var(--second-primary-text-color);
 }
 .address {
   margin-top: 20px;
@@ -261,7 +279,7 @@ a {
   margin-bottom: 9px;
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--second-primary-text-color);
 }
 .mail-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -294,9 +312,11 @@ a {
 /* ==================portfolio=================== */
 .section-conteiner {
   font-family: 'Roboto', sans-serif;
-  background: #ffffff;
+  background: var(--second-primary-text-color);
 
-  color: #212121;
+  color: var(--primary-text-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .buton-list {
@@ -308,14 +328,18 @@ a {
   font-size: 16px;
   line-height: 1.62;
   /* identical to box height, or 162% */
-
   justify-content: center;
   text-align: center;
   letter-spacing: 0.03em;
+
+  padding-bottom: 34px;
+}
+.buton-list li {
+  margin-right: 30px;
 }
 .button-portf {
-  background-color: #f5f4fa;
-  margin-right: 30px;
+  background-color: var(--button-portf-background);
+
   width: 130px;
   height: 38px;
   border: none;
@@ -327,13 +351,33 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .button-portf:active {
-  background-color: #2196f3;
-  color: #fff;
+  background-color: var(--accennt-color);
+  color: var(--second-primary-text-color);
 }
 .button-portf:focus {
+}
+.button-one {
+  width: 73px;
+  height: 38px;
+}
+.button-two {
+  width: 128px;
+  height: 38px;
+}
+.button-three {
+  width: 145px;
+  height: 38px;
+}
+.button-for {
+  width: 103px;
+  height: 38px;
+}
+.button-five {
+  width: 130px;
+  height: 38px;
 }
 .all-section-port {
   display: flex;
@@ -341,7 +385,6 @@ a {
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 .name-img {
   width: 322px;
@@ -351,14 +394,16 @@ a {
   line-height: 2;
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--primary-text-color);
   margin-top: 20px;
   margin-left: 24px;
 }
 .content-tipe {
-  color: #757575;
+  color: var(--title-text-color);
   margin-top: 4px;
   margin-left: 24px;
+  margin-bottom: 20px;
+  margin: 4px 24px 20px 24px;
 }
 
 .img-card-block {
