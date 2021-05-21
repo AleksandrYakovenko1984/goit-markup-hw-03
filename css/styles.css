@@ -32,6 +32,7 @@ img {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .header-container {
   display: flex;
@@ -42,6 +43,7 @@ body {
   font-family: Roboto, sans-serif;
   background: #ffffff;
   color: var(--primary-text-color);
+  margin: 0px 0px 0px 0px;
 }
 /* header */
 .header {
@@ -74,6 +76,7 @@ ul {
 }
 a {
   text-decoration: none;
+  display: inline-block;
 }
 /* navigation */
 .nav-list-all {
@@ -122,16 +125,14 @@ a {
 /* ==========section hero========== */
 .hero {
   background-color: var(--background-color-primary);
-  height: 600px;
   display: flex;
   padding-top: 200px;
-  padding-bottom: 94px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
 .hero-name {
   width: 696px;
-  height: 120px;
   margin: 0 auto 0 auto;
   font-weight: 900;
   font-size: 44px;
@@ -190,7 +191,6 @@ a {
   padding-bottom: 94px;
 }
 .we-are-do {
-  height: 42px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -220,13 +220,17 @@ a {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
-  padding: 0px 0 50px 0;
+  margin: 0px 0 50px 0;
   text-align: center;
   color: var(--primary-text-color);
 }
 .our-team {
   display: flex;
   flex-direction: row;
+}
+.img-card-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .agent-name {
   font-weight: 500;
@@ -235,15 +239,13 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 .agent-prof {
   font-size: 16px;
   line-height: 19px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-top: 10px;
   color: var(--title-text-color);
 }
 .card-agent {
@@ -253,7 +255,6 @@ a {
 /* footer */
 .footer {
   padding: 60px 0;
-  height: 252px;
   background-color: var(--background-color-primary);
 }
 .logo-footer {
@@ -291,7 +292,7 @@ a {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   /* or 171% */
 
   letter-spacing: 0.03em;
@@ -333,16 +334,14 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
 
-  padding-bottom: 34px;
+  margin-bottom: 50px;
 }
 .buton-list li {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 .button-portf {
   background-color: var(--button-portf-background);
 
-  width: 130px;
-  height: 38px;
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -351,7 +350,7 @@ a {
   cursor: pointer;
   text-align: center;
   letter-spacing: 0.03em;
-
+  padding: 6px 22px;
   color: var(--primary-text-color);
 }
 .button-portf:hover {
@@ -363,26 +362,6 @@ a {
 .button-portf:focus {
 }
 
-.button-one {
-  width: 73px;
-  height: 38px;
-}
-.button-two {
-  width: 128px;
-  height: 38px;
-}
-.button-three {
-  width: 145px;
-  height: 38px;
-}
-.button-for {
-  width: 103px;
-  height: 38px;
-}
-.button-five {
-  width: 130px;
-  height: 38px;
-}
 .all-section-port {
   display: flex;
   flex-direction: row;
@@ -400,25 +379,20 @@ a {
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  margin-top: 20px;
-  margin-left: 24px;
 }
 .content-tipe {
   color: var(--title-text-color);
-  margin-top: 4px;
-  margin-left: 24px;
-  margin-bottom: 20px;
-  margin: 4px 24px 20px 24px;
 }
 
 .img-card-block {
   background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
+
   margin-bottom: var(--card-set-gap);
   flex-basis: calc(100% / 3-var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
+  width: 370px;
+  height: 404px;
 }
 .card {
 }
@@ -426,4 +400,8 @@ a {
 }
 .card-content {
   padding: 10px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  box-sizing: border-box;
+  padding: 20px 24px;
 }
