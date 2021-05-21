@@ -5,6 +5,7 @@
   --accennt-color: #2196f3;
   --background-color-primary: #2f303a;
   --button-portf-background: #f5f4fa;
+  --card-set-gap: 30px;
 }
 
 h1,
@@ -25,6 +26,7 @@ ol {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 .container {
   width: 1200px;
@@ -211,6 +213,7 @@ a {
 /* наша команда */
 .our-team-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team-name {
@@ -224,7 +227,6 @@ a {
 .our-team {
   display: flex;
   flex-direction: row;
-  margin-bottom: 94px;
 }
 .agent-name {
   font-weight: 500;
@@ -387,16 +389,11 @@ a {
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: calc(-1 * var(--card-set-gap));
+  margin-left: -30px;
 }
-.all-section-port > li {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  margin-bottom: 30px;
-}
+
 .name-img {
-  width: 322px;
-  height: 36px;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -415,5 +412,18 @@ a {
 }
 
 .img-card-block {
-  margin-right: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-bottom: var(--card-set-gap);
+  flex-basis: calc(100% / 3-var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+.card {
+}
+.card-thumb {
+}
+.card-content {
+  padding: 10px;
 }
