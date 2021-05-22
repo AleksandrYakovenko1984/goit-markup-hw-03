@@ -341,7 +341,8 @@ a {
 }
 .button-portf {
   background-color: var(--button-portf-background);
-
+  font-family: Roboto;
+  font-style: normal;
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -387,12 +388,10 @@ a {
 .img-card-block {
   background: #ffffff;
 
-  margin-bottom: var(--card-set-gap);
   flex-basis: calc(100% / 3-var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   width: 370px;
-  height: 404px;
 }
 .card {
 }
