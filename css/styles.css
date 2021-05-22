@@ -319,6 +319,7 @@ a {
   color: var(--primary-text-color);
   padding-top: 94px;
   padding-bottom: 94px;
+  border: tomato;
 }
 
 .buton-list {
@@ -333,7 +334,6 @@ a {
   justify-content: center;
   text-align: center;
   letter-spacing: 0.03em;
-
   margin-bottom: 50px;
 }
 .buton-list li {
@@ -387,7 +387,6 @@ a {
 
 .img-card-block {
   background: #ffffff;
-
   flex-basis: calc(100% / 3-var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
